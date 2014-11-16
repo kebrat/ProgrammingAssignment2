@@ -32,7 +32,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
     
-    inv <- x$getinv                         ## accesses object x and gets value of inverse
+    inv <- x$getinv()                       ## accesses object x and gets value of inverse
     
     if (!is.null(inv)) {                    ## if inverse was already cached (not null)
         message("getting cached data")      ## display this message
